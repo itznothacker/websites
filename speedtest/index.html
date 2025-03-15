@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="speed-test-card">
+            <div class="card-content">
+                <h1>Internet Speed Test</h1>
+                
+                <div id="loading-spinner" class="spinner hidden">
+                    <div class="spinner-ring"></div>
+                </div>
+
+                <div id="result" class="result hidden">
+                    <div class="speed-value">
+                        <span id="speed-number">0</span>
+                        <span class="unit">MB/s</span>
+                    </div>
+                    <p class="speed-label">Download Speed</p>
+                </div>
+
+                <button id="test-button" class="test-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    <span>Start Test</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
